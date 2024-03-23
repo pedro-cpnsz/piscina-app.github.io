@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.creber {
+    font-size: 1.8em;
+    padding-top: 25px;
+    color: white;
+}
+.qsomos {
+    font-size: 1.5em;
+    padding: 20px;
+}
+.paesd {
+    font-size: 1.5em;
+    padding: 20px;
+}
+.paesnome {
+    font-size: 1.2em;
+}
+.logo {
+    border: 1px solid black;
+    background-image: url("img/p1.jpg");
+    opacity: 60%;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.textoQuemSomos {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.quemSomos {
+    background-color: #6b2c23;
+    border: 1px solid black;
+    width: 100%;
+    height: 120px;
+    color: white;
+}
+
+.conteudo {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 80%;
+}
+table {
+    width: 100%;
+}
+table td {
+    width: 25%;
+    vertical-align: top;
+    text-align: center;
+}
+.imgPaes {
+    width: 200px;
+}
+
+.solicitarLote {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    height: 200px;
+}
+.solicitarLote input {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}

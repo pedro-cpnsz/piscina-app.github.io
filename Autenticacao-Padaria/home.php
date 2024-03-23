@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria do Créber</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<style>
+    header {
+        margin-top: 15px;
+        padding-bottom: 65px;
+        border-bottom: 2px solid #955e66a3;
+        text-align: center;
+        height: 120px;
+        background-color: #fff;
+        color: #a07237;
+    }
+    .fundo {
+        background-color: #e4d2c7;
+    }
+    .container {
+        padding-top: 20px;
+        background-color: #fff;
+    }
+    .imgPaes {
+        width: 200px;
+    }
+</style>
+<body>
+    <header>
+        <h1>PADARIA DO CRÉBER</h1>
+        <?php include("navmenu.php")?>
+    </header>
+    <div class="fundo">
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <?php
+                        if (isset($_GET["pagina"]) && !empty($_GET["pagina"])) {
+                            $pagina = $_GET["pagina"];
+                            include("$pagina");
+                        }else{ ?>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    <div class="container rounded-top">
+        <div>
+            <h2>Quem somos?</h2>
+            <p>Estamos há mais de 10 anos no mercado, distribuindo pães e produtos para lanches.<br>
+            Sempre preocupados com a qualidade dos produtos, desenvolvemos parcerias com os melhores fabricantes para poder oferecer somente ótimos produtos.</p>
+        </div>
+        <div class="conteudo">
+            <h2>Pães disponíveis:</h2>
+            <table>
+                <tr>
+                    <td>
+                        <img class="imgPaes" src="img/1.jpg">
+                        <h3>PÃO MÔNACO COM GERGELIM</h3>
+                        <p>Pão com cobertura de gergelim.</p>           
+                        <p>
+                            Especificação do produto:<br>
+                            Diâmetro: 11 cm<br>
+                            Peso: 75 g
+                        </p>
+                    </td>
+                    <td>
+                        <img class="imgPaes" src="img/2.png">
+                        <h3>PÃO PITA COM GERGELIM</h3>
+                        <p>Pão com cobertura de gergelim.</p>
+                        <p>
+                            Especificação do produto:<br>
+                            Diâmetro: 11 cm<br>
+                            Peso: 75 g
+                        </p>
+                    </td>
+                    <td>
+                        <img class="imgPaes" src="img/3.jpg">
+                        <h3>PÃO BRIOCHE MAX</h3>
+                        <p>Pão levemente adocicado.</p>
+                        <p>
+                            Especificação do produto:<br>
+                            Diâmetro: 10,5 cm<br>
+                            Peso: 85 g
+                        </p>
+                    </td>
+                    <td>
+                        <img class="imgPaes" src="img/4.jpeg">
+                        <h3>PÃO AUSTRALIANO PITA</h3>
+                        <p>Pão levemente adocicado.</p>
+                        <p>
+                            Especificação do produto:<br>
+                            Diâmetro: 10,5 cm<br>
+                            Peso: 78 g
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="imgPaes" src="img/1.jpg">
+                        <h3>PÃO MÔNACO COM GERGELIM</h3>
+                        <p>Pão com cobertura de gergelim.</p>           
+                        <p>
+                            Especificação do produto:<br>
+                            Diâmetro: 11 cm<br>
+                            Peso: 75 g
+                        </p>
+                    </td>
+                    <td>
+                        <img class="imgPaes" src="img/2.png">
+                        <h3>PÃO PITA COM GERGELIM</h3>
+                        <p>Pão com cobertura de gergelim.</p>
+                        <p>
+                            Especificação do produto:<br>
+                            Diâmetro: 11 cm<br>
+                            Peso: 75 g
+                        </p>
+                    </td>
+                    <td>
+                        <img class="imgPaes" src="img/3.jpg">
+                        <h3>PÃO BRIOCHE MAX</h3>
+                        <p>Pão levemente adocicado.</p>
+                        <p>
+                            Especificação do produto:<br>
+                            Diâmetro: 10,5 cm<br>
+                            Peso: 85 g
+                        </p>
+                    </td>
+                    <td>
+                        <img class="imgPaes" src="img/4.jpeg">
+                        <h3>PÃO AUSTRALIANO PITA</h3>
+                        <p>Pão levemente adocicado.</p>
+                        <p>
+                            Especificação do produto:<br>
+                            Diâmetro: 10,5 cm<br>
+                            Peso: 78 g
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+    <?php } ?>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
